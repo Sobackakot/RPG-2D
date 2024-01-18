@@ -1,8 +1,11 @@
- 
-using UnityEngine; 
+
+using UnityEditor.Build.Content;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GunRotation : MonoBehaviour 
-{
+{ 
+
     public float rotationSpeed = 5f; 
     void Update()
     { 
@@ -15,5 +18,6 @@ public class GunRotation : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
          
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-    } 
+    }
+    
 }
