@@ -1185,6 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
+  myCamera: {fileID: 752529969}
 --- !u!114 &149826723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2662,7 +2663,7 @@ GameObject:
   - component: {fileID: 501552533}
   - component: {fileID: 501552536}
   m_Layer: 5
-  m_Name: 'Canvas '
+  m_Name: WindowUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7739,7 +7740,7 @@ MonoBehaviour:
   damgeCalculate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 501552536}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: DamageCalculate
         m_Mode: 1
