@@ -2,14 +2,11 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DestroyControl : MonoBehaviour
+public class EnemyTrigger : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private UnityEvent _onMoving;
     [SerializeField] private UnityEvent _continueMove;
-
-    [SerializeField] private UnityEvent onMoney;
-    [SerializeField] private UnityEvent onLVL;
 
     private void OnTriggerEnter2D(Collider2D item)
     {
@@ -20,8 +17,8 @@ public class DestroyControl : MonoBehaviour
         }
         else
         {
-            onMoney.Invoke();
-            onLVL.Invoke();
+            UIManager._money += 5;
+            UIManager._countKill += 1;
             Destroy(gameObject);
         }
             

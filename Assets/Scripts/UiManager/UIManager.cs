@@ -10,61 +10,40 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject _gameOverText;
 
-    private float _hp = 100f;
-    private int _money = 0;
-
-    private int _lvl = 0;
-    private int _countKill = 0;
-
-    private Coroutine _coroutine;
-
-    public void Start()
-    { 
-        _coroutine = null;
-        Time.timeScale = 1f;
-    }
-
-    public void MoneyCalculate()
+    private static float _hp = 100f;
+    public static int _money = 0;
+    public static int _countKill = 0;
+    private static int _lvl = 0;
+     
+ 
+    public void Update()
     {
-        _money += 5;
-        _moneyText.text = _money.ToString();
+        LVLCalculate();
     }
-    public void LVLCalculate()
-    {    
-        _countKill += 1;
-        if( _countKill >= 20) 
-        {
-            _lvl += 1;
-            _lvlText.text = "LVL - "+_lvl.ToString();
-            _countKill = 0;
-        } 
-    }
+
     public void DamageCalculate()
     {
-        if (_coroutine == null)
-            _coroutine = StartCoroutine(TakeDamage());
-        else
+        if (_hp <= 0)
         {
-            StopCoroutine(_coroutine);
-            _coroutine = null;
-        }     
-    }
-    
-    public void GameOver()
-    {
-        _gameOverText.SetActive(true);
-        Time.timeScale = 0.0f;
+            _gameOverText.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
+        else _hp -= 5f;
     }
 
-    private IEnumerator TakeDamage()
+    private void ShowTextUI()
     {
-        while (true)
-        {
-            if (_hp <= 0)
-                GameOver();
-            yield return new WaitForSeconds(0.5f);
-            _hp -= 5f;
-            _hpText.text = _hp.ToString();
-        }
+        _hpText.text = _hp.ToString();
+        _lvlText.text = "LVL - " + _lvl.ToString();
+        _moneyText.text = _money.ToString();
     }
+    private void LVLCalculate()
+    { 
+        if ( _countKill >= 20) 
+        {
+            _lvl += 1;  
+            _countKill = 0;
+        }
+        ShowTextUI();
+    }  
 }
