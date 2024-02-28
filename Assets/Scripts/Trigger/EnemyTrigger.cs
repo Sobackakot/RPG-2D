@@ -17,8 +17,8 @@ public class EnemyTrigger : MonoBehaviour
         }
         else
         {
-            UIManager._money += 5;
-            UIManager._countKill += 1;
+            MainManager.Instance.money += 5;
+            MainManager.Instance.countKill += 1;
             Destroy(gameObject);
         }
             

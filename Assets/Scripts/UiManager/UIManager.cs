@@ -1,4 +1,4 @@
-using System.Collections; 
+
 using TMPro;
 using UnityEngine;
 
@@ -10,15 +10,23 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject _gameOverText;
 
-    private static float _hp = 100f;
-    public static int _money = 0;
-    public static int _countKill = 0;
-    private static int _lvl = 0;
-     
- 
+    private float _hp = 100f;
+    private int _money = 0;
+    private int _countKill = 0;
+    private int _lvl = 0;
+
+    public void Start()
+    {
+        _hp = MainManager.Instance.hp; 
+        _lvl = MainManager.Instance.lvl;
+        _money = MainManager.Instance.money;
+        _countKill = MainManager.Instance.countKill;
+    }
     public void Update()
     {
-        LVLCalculate();
+        LVLCalculate(); 
+        _money = MainManager.Instance.money;
+        _countKill = MainManager.Instance.countKill;
     }
 
     public void DamageCalculate()
@@ -28,7 +36,11 @@ public class UIManager : MonoBehaviour
             _gameOverText.SetActive(true);
             Time.timeScale = 0.0f;
         }
-        else _hp -= 5f;
+        else 
+        {
+            _hp -= 5f;
+            MainManager.Instance.hp = _hp;
+        } 
     }
 
     private void ShowTextUI()
@@ -41,8 +53,9 @@ public class UIManager : MonoBehaviour
     { 
         if ( _countKill >= 20) 
         {
-            _lvl += 1;  
-            _countKill = 0;
+            MainManager.Instance.countKill -= 20;
+            _lvl += 1;
+            MainManager.Instance.lvl = _lvl;
         }
         ShowTextUI();
     }  
