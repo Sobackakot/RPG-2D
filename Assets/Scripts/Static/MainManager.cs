@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class MainManager : MonoBehaviour
 {
@@ -29,13 +30,37 @@ public class MainManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
-
-    public void SaveData(int _money = 0, int _countKill = 0,int _lvl = 0, float _hp = 0f)
+    public void SavingData()
     {
-        hp = _hp;
-        money = _money;
-        countKill = _countKill;
-        lvl = _lvl;
+        SaveData data = new SaveData();
+        data.hp = hp;
+        data.money = money;
+        data.countKill = countKill;
+        data.lvl = lvl;
+        string json = JsonUtility.ToJson(data);
+        File.WriteAllText(Application.persistentDataPath + "/saveFile.json", json);
     }
-   
+    public void LoadingData()
+    {
+        string path = Application.persistentDataPath + "/saveFile.json";
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            hp = data.hp;
+            money = data.money;
+            countKill = data.countKill;
+            lvl = data.lvl;
+        }
+    }
+
+    [System.Serializable]
+    class SaveData
+    {
+        public float hp;
+        public int money;
+        public int countKill;
+        public int lvl;
+    }
 }
+
