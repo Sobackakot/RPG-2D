@@ -45,3 +45,6 @@ TagManager:
   - name: 'Item '
     uniqueID: 3349610959
     locked: 0
+  - name: gameObject
+    uniqueID: 1486589423
+    locked: 0

@@ -8,18 +8,19 @@ public class EnemyTrigger : MonoBehaviour
     [SerializeField] private UnityEvent _onMoving;
     [SerializeField] private UnityEvent _continueMove;
 
-    private void OnTriggerEnter2D(Collider2D item)
+    private void OnTriggerEnter2D(Collider2D uther)
     {
-        if (item.CompareTag("Finish") || item.CompareTag("Enemy"))
+        if (uther.CompareTag("Finish") || uther.CompareTag("Enemy"))
         {
             _anim.SetBool("isMoving", false);
             _onMoving.Invoke();
         }
-        else
+        else if(uther.CompareTag("Bullet"))
         {
             MainManager.Instance.money += 5;
             MainManager.Instance.countKill += 1;
             Destroy(gameObject);
+            Destroy(uther.gameObject);
         }
             
     }
