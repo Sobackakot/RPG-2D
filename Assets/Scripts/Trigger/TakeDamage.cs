@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TakeDamaje : MonoBehaviour
+public class TakeDamage : MonoBehaviour
 {
     [SerializeField] private UnityEvent damgeCalculate; 
 

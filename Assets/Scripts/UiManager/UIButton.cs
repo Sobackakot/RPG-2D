@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIButton : MonoBehaviour
 {   
     public UnityEvent onUiManagerSaveData;
+    public UnityEvent onUiManagerResetData;
     public UnityEvent onManagerUIResetHP;
 
     [SerializeField] private GameObject menu;
@@ -50,7 +51,12 @@ public class UIButton : MonoBehaviour
         MainManager.Instance.LoadingData();
         SceneManager.LoadScene(1);
     }
-     
+    public void RestartGame()
+    {
+        onUiManagerResetData.Invoke();
+        SceneManager.LoadScene(1);
+    }
+
     public void ExitButton()
     {
         MainManager.Instance.SavingData();

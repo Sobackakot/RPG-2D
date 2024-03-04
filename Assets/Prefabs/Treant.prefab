@@ -207,14 +207,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 719509304a3ec66468e2972c6e8331fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 196902938985464809, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
   _anim: {fileID: 95320350543669538}
-  _onMoving:
+  onMoveEnable:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 918409476470564960}
         m_TargetAssemblyTypeName: EnemyMove, Assembly-CSharp
-        m_MethodName: DisableScriptAfterEvent
+        m_MethodName: EnableMoveEnemy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -222,14 +221,14 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-  _continueMove:
+  onMoveDesable:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 918409476470564960}
         m_TargetAssemblyTypeName: EnemyMove, Assembly-CSharp
-        m_MethodName: EnableScriptAfterEvent
+        m_MethodName: DisableMoveEnemy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

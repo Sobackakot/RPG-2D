@@ -11,11 +11,11 @@ public class EnemyMove : MonoBehaviour
     { 
         transform.position += -transform.right * 1f * Time.deltaTime;
     }
-    public void DisableScriptAfterEvent()
+    public void DisableMoveEnemy()
     { 
         enabled = false;
     }
-    public void EnableScriptAfterEvent()
+    public void EnableMoveEnemy()
     {
         enabled = true;
     }

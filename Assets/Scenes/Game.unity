@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 1434891647}
   - component: {fileID: 1434891649}
   m_Layer: 0
-  m_Name: FinishBord
+  m_Name: ForestBord
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1640140600}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: DamageCalculate
+        m_MethodName: TakeDamageForestHP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1084,10 +1084,110 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1334320066116724046, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: m_Name
+      value: ResetForestHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8553509785311301633}
+    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetHPButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIButton, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3962509443045390752, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 752529969}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640140600}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640140600}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640140600}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetForestHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7984856961301084688, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1177,6 +1277,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+--- !u!114 &8553509785311301633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+  m_PrefabInstance: {fileID: 8553509785311301632}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6834ea198032b45ac7944aab6445c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

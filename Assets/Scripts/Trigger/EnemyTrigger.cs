@@ -5,43 +5,21 @@ using UnityEngine.UI;
 
 public class EnemyTrigger : MonoBehaviour
 {
-    [SerializeField] private UIManager manager;
+    [SerializeField] private UnityEvent onMoveEnable;
+    [SerializeField] private UnityEvent onMoveDesable;
 
-    [SerializeField] private Animator _anim;
-    [SerializeField] private UnityEvent _onMoving;
-    [SerializeField] private UnityEvent _continueMove;
-    [SerializeField] private Image hp; 
+    [SerializeField] private Animator _anim; 
+    [SerializeField] private Image hp;
+     
     private float currentHpEnemy = 100f;
-    private int countMoney = 0;
-    private int countKill = 0;
-
-    private void OnEnable()
-    {
-        manager.onEnemyTriggerKill += GetKill;
-        manager.onEnemyTriggerMoney += GetMoney;  
-    }
-
-    private void OnDisable()
-    {
-        manager.onEnemyTriggerKill -= GetKill;
-        manager.onEnemyTriggerMoney -= GetMoney;  
-    }
-    public int GetMoney()
-    {
-        return countMoney;
-    }
-    public int GetKill()
-    {
-        return countKill;
-    }
-
+     
     private void UpdateHpEnemy()
     {
         currentHpEnemy -= 25f;
         if (currentHpEnemy <= 0f)
         {
-            countMoney += 5;
-            countKill += 1;
+            MainManager.Instance.countKill += 1;
+            MainManager.Instance.countMoney += 5;
             Destroy(gameObject);
         }
         else 
@@ -61,14 +39,14 @@ public class EnemyTrigger : MonoBehaviour
         if (other.CompareTag("Finish") || other.CompareTag("Enemy"))
         {
             _anim.SetBool("isMoving", false);
-            _onMoving.Invoke();
+            onMoveDesable.Invoke(); 
         }
     }
 
     private void OnTriggerExit2D(Collider2D item)
     {
         _anim.SetBool("isMoving", true);
-        _continueMove.Invoke();
+        onMoveEnable.Invoke();
     }  
 }
     

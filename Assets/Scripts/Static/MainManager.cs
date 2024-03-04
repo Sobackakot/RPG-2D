@@ -8,7 +8,7 @@ public class MainManager : MonoBehaviour
     public static MainManager Instance;
 
     public float hp = 100f;
-    public int money = 0;
+    public int countMoney = 0;
     public int countKill = 0;
     public int lvl = 0;
 
@@ -20,13 +20,13 @@ public class MainManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); 
     }
     public void SavingData()
     {
         SaveData data = new SaveData();
         data.hp = hp;
-        data.money = money;
+        data.money = countMoney;
         data.countKill = countKill;
         data.lvl = lvl;
         string json = JsonUtility.ToJson(data);
@@ -40,7 +40,7 @@ public class MainManager : MonoBehaviour
             string json = File.ReadAllText(path);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
             hp = data.hp;
-            money = data.money;
+            countMoney = data.money;
             countKill = data.countKill;
             lvl = data.lvl;
         }
