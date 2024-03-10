@@ -17,9 +17,12 @@ public class EnemyTrigger : MonoBehaviour
     {
         currentHpEnemy -= 25f;
         if (currentHpEnemy <= 0f)
-        {
-            MainManager.Instance.countKill += 1;
-            MainManager.Instance.countMoney += 5;
+        {   
+            if(MainManager.Instance!=null)
+            {
+                MainManager.Instance.countKill += 1;
+                MainManager.Instance.countMoney += 5;
+            } 
             Destroy(gameObject);
         }
         else 

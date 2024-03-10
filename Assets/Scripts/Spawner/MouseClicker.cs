@@ -9,17 +9,18 @@ public class MouseClicker : MonoBehaviour
 
     private void Update()
     {
-        Raycasting();
+        LeftMouseButton();
     }
-    private void Raycasting()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-        if(hit.collider != null)
-        {
-            LeftMouseButton();
-        }
-    }
+    //private void Raycasting()
+    //{
+    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+    //    if(hit.collider != null)
+    //    {
+    //        LeftMouseButton();
+    //    }
+    //}
+    
     private void LeftMouseButton()
     {   
         if(Input.GetMouseButtonDown(0)) 

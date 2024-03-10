@@ -44,11 +44,13 @@ public class UIButton : MonoBehaviour
      
     public void SaveButton()
     {
-        MainManager.Instance.SavingData();
+        if (MainManag.Instance != null)
+            MainManager.Instance.SavingData();
     }
     public void LoadButton()
     {
-        MainManager.Instance.LoadingData();
+        if (MainManag.Instance != null)
+            MainManager.Instance.LoadingData();
         SceneManager.LoadScene(1);
     }
     public void RestartGame()
@@ -59,7 +61,8 @@ public class UIButton : MonoBehaviour
 
     public void ExitButton()
     {
-        MainManager.Instance.SavingData();
+        if (MainManag.Instance != null)
+            MainManager.Instance.SavingData();
         Application.Quit();
     }
 }

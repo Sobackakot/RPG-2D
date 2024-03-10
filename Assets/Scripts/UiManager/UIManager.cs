@@ -1,6 +1,7 @@
 
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 public class UIManager: MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _hpText;
@@ -25,25 +26,34 @@ public class UIManager: MonoBehaviour
     }   
    
     public void SaveData()
-    {
-        MainManager.Instance.hp = _hp;
-        MainManager.Instance.lvl = _lvl;
-        MainManager.Instance.countMoney = _countMoney;
-        MainManager.Instance.countKill = _countKill;
+    {   
+        if(MainManager.Instance != null)
+        {
+            MainManager.Instance.hp = _hp;
+            MainManager.Instance.lvl = _lvl;
+            MainManager.Instance.countMoney = _countMoney;
+            MainManager.Instance.countKill = _countKill;
+        } 
     }
     public void LoadData()
-    {
-        _hp = MainManager.Instance.hp;
-        _lvl = MainManager.Instance.lvl;
-        _countMoney = MainManager.Instance.countMoney;
-        _countKill = MainManager.Instance.countKill;
+    {   
+        if(MainManager.Instance != null)
+        {
+            _hp = MainManager.Instance.hp;
+            _lvl = MainManager.Instance.lvl;
+            _countMoney = MainManager.Instance.countMoney;
+            _countKill = MainManager.Instance.countKill;
+        } 
     }
     public void ResetData()
-    {
-        MainManager.Instance.hp = 100f;
-        MainManager.Instance.lvl = 0;
-        MainManager.Instance.countMoney = 0;
-        MainManager.Instance.countKill = 0;
+    {   
+        if(MainManag.Instance != null)
+        {
+            MainManager.Instance.hp = 100f;
+            MainManager.Instance.lvl = 0;
+            MainManager.Instance.countMoney = 0;
+            MainManager.Instance.countKill = 0;
+        } 
     }
     public void ResetForestHP()
     {
@@ -51,7 +61,8 @@ public class UIManager: MonoBehaviour
         {
             _hp = 100f;
             _countMoney -= 100;
-            MainManager.Instance.countMoney =_countMoney;
+            if (MainManag.Instance != null)
+                MainManager.Instance.countMoney =_countMoney;
         }  
     }
 
@@ -70,19 +81,22 @@ public class UIManager: MonoBehaviour
 
     private void ShowTextUI()
     {
-        _countMoney = MainManager.Instance.countMoney;
+        if (MainManag.Instance != null)
+            _countMoney = MainManager.Instance.countMoney;
          _hpText.text = _hp.ToString();
         _lvlText.text = "LVL - " + _lvl.ToString(); 
         _moneyText.text = _countMoney.ToString(); 
     }
     private void LVLCalculate()
     {
-        _countKill = MainManager.Instance.countKill;
+        if (MainManag.Instance != null)
+            _countKill = MainManager.Instance.countKill;
         if ( _countKill >= 20) 
         {
             _countKill -= 20;
             _lvl += 1;
-            MainManager.Instance.countKill = _countKill;
+            if (MainManag.Instance != null)
+                MainManager.Instance.countKill = _countKill;
         }
         ShowTextUI();
     }  
