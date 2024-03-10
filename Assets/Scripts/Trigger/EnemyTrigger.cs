@@ -22,6 +22,7 @@ public class EnemyTrigger : MonoBehaviour
             {
                 MainManager.Instance.countKill += 1;
                 MainManager.Instance.countMoney += 5;
+                Debug.Log("INST " + MainManager.Instance.countMoney);
             } 
             Destroy(gameObject);
         }

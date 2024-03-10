@@ -57,11 +57,12 @@ public class UIManager: MonoBehaviour
     }
     public void ResetForestHP()
     {
+        Debug.Log("ResetForestHP" + _countMoney);
         if (_countMoney >= 100)
         {
             _hp = 100f;
             _countMoney -= 100;
-            if (MainManag.Instance != null)
+            if (MainManager.Instance != null)
                 MainManager.Instance.countMoney =_countMoney;
         }  
     }
@@ -81,7 +82,7 @@ public class UIManager: MonoBehaviour
 
     private void ShowTextUI()
     {
-        if (MainManag.Instance != null)
+        if (MainManager.Instance != null)
             _countMoney = MainManager.Instance.countMoney;
          _hpText.text = _hp.ToString();
         _lvlText.text = "LVL - " + _lvl.ToString(); 
@@ -89,13 +90,13 @@ public class UIManager: MonoBehaviour
     }
     private void LVLCalculate()
     {
-        if (MainManag.Instance != null)
+        if (MainManager.Instance != null)
             _countKill = MainManager.Instance.countKill;
         if ( _countKill >= 20) 
         {
             _countKill -= 20;
             _lvl += 1;
-            if (MainManag.Instance != null)
+            if (MainManager.Instance != null)
                 MainManager.Instance.countKill = _countKill;
         }
         ShowTextUI();

@@ -44,12 +44,12 @@ public class UIButton : MonoBehaviour
      
     public void SaveButton()
     {
-        if (MainManag.Instance != null)
+        if (MainManager.Instance != null)
             MainManager.Instance.SavingData();
     }
     public void LoadButton()
     {
-        if (MainManag.Instance != null)
+        if (MainManager.Instance != null)
             MainManager.Instance.LoadingData();
         SceneManager.LoadScene(1);
     }
@@ -61,7 +61,7 @@ public class UIButton : MonoBehaviour
 
     public void ExitButton()
     {
-        if (MainManag.Instance != null)
+        if (MainManager.Instance != null)
             MainManager.Instance.SavingData();
         Application.Quit();
     }
