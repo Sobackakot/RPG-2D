@@ -56,8 +56,7 @@ public class UIManager: MonoBehaviour
         } 
     }
     public void ResetForestHP()
-    {
-        Debug.Log("ResetForestHP" + _countMoney);
+    { 
         if (_countMoney >= 100)
         {
             _hp = 100f;
