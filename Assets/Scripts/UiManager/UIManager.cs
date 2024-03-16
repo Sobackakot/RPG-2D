@@ -44,17 +44,7 @@ public class UIManager: MonoBehaviour
             _countMoney = MainManager.Instance.countMoney;
             _countKill = MainManager.Instance.countKill;
         } 
-    }
-    public void ResetData()
-    {   
-        if(MainManag.Instance != null)
-        {
-            MainManager.Instance.hp = 100f;
-            MainManager.Instance.lvl = 0;
-            MainManager.Instance.countMoney = 0;
-            MainManager.Instance.countKill = 0;
-        } 
-    }
+    } 
     public void ResetForestHP()
     { 
         if (_countMoney >= 100)

@@ -200,51 +200,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35153818, y: 4.320897}
   m_EdgeRadius: 0
---- !u!1 &255397853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 255397854}
-  - component: {fileID: 255397855}
-  m_Layer: 0
-  m_Name: 'SpawnerEnemy '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &255397854
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255397853}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.42900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1057035283}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &255397855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255397853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb5b80b4aadbc0468bf3500594caf2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 1133080268989400, guid: e06fa957b3f347a44852013ad8ac0b88, type: 3}
 --- !u!1 &495128430
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,60 +565,13 @@ Transform:
   m_GameObject: {fileID: 1057035282}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.769, y: -0.54, z: -0.0073170746}
+  m_LocalPosition: {x: 1.968, y: 0.429, z: -0.0073170746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 255397854}
-  - {fileID: 1987187942}
-  - {fileID: 1225134410}
+  - {fileID: 1657393334}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1225134409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1225134410}
-  - component: {fileID: 1225134411}
-  m_Layer: 0
-  m_Name: SpawnerEnemy (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1225134410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225134409}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1057035283}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1225134411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225134409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb5b80b4aadbc0468bf3500594caf2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 1133080268989400, guid: e06fa957b3f347a44852013ad8ac0b88, type: 3}
 --- !u!1 &1356793656
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8767050dbeb26047b5800b217a4f45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1987187941
+--- !u!1 &1657393333
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -900,37 +808,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1987187942}
-  - component: {fileID: 1987187943}
+  - component: {fileID: 1657393334}
+  - component: {fileID: 1657393335}
   m_Layer: 0
-  m_Name: SpawnerEnemy (1)
+  m_Name: SpawnerEnemy  (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1987187942
+--- !u!4 &1657393334
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987187941}
+  m_GameObject: {fileID: 1657393333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.98100007, z: 0}
+  m_LocalPosition: {x: 0, y: -0.158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1057035283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1987187943
+--- !u!114 &1657393335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987187941}
+  m_GameObject: {fileID: 1657393333}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fb5b80b4aadbc0468bf3500594caf2a, type: 3}
@@ -1084,108 +992,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1334320066116724046, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: m_Name
-      value: ResetForestHP
-      objectReference: {fileID: 0}
-    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8553509785311301633}
-    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetHPButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2969336082185068594, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIButton, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3962509443045390752, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 752529969}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.size
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.size
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1640140600}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1640140600}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1640140600}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      objectReference: {fileID: 6855845819274440557, guid: e06fa957b3f347a44852013ad8ac0b88, type: 3}
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetForestHP
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveDataEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnemyTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SaveData
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetData
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onManagerUIResetHP.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+    - target: {fileID: 4690901067401910626, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
+      propertyPath: onEnemyTriggerSaveData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7984856961301084688, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
@@ -1277,17 +1113,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
---- !u!114 &8553509785311301633 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4568475069020015015, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-  m_PrefabInstance: {fileID: 8553509785311301632}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6834ea198032b45ac7944aab6445c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

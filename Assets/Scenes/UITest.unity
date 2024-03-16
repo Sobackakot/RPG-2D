@@ -207,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1330651662}
-        m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonMenu, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822f943a6fd93ce40818dc525cdf27b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPosition: []
   hp: 100
   countMoney: 0
   countKill: 0
@@ -885,7 +886,6 @@ GameObject:
   - component: {fileID: 1330651659}
   - component: {fileID: 1330651658}
   - component: {fileID: 1330651662}
-  - component: {fileID: 1330651663}
   m_Layer: 5
   m_Name: WindowUI
   m_TagString: Untagged
@@ -994,27 +994,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6834ea198032b45ac7944aab6445c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onUiManagerSaveData:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1330651662}
-        m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
-        m_MethodName: SaveButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onUiManagerResetData:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1330651662}
-        m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
-        m_MethodName: RestartGame
+      - m_Target: {fileID: 147733806}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: ResetData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1024,38 +1009,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onManagerUIResetHP:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1330651662}
-        m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
-        m_MethodName: ResetHPButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  menu: {fileID: 2032742908}
---- !u!114 &1330651663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330651657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8767050dbeb26047b5800b217a4f45d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpText: {fileID: 341813502}
-  _lvlText: {fileID: 341813502}
-  _moneyText: {fileID: 341813502}
-  _gameOverText: {fileID: 2032742908}
 --- !u!1 &1354815159
 GameObject:
   m_ObjectHideFlags: 0

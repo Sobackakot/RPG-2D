@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 719509304a3ec66468e2972c6e8331fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anim: {fileID: 95320350543669538}
   onMoveEnable:
     m_PersistentCalls:
       m_Calls:
@@ -238,6 +237,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _anim: {fileID: 95320350543669538}
   hp: {fileID: 211646203060339492}
 --- !u!1 &8217026427960245672
 GameObject:
