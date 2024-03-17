@@ -145,5 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 8555286416073766643, guid: 610a3e04703cdfb40833bfa4268d8cbc, type: 3}
-  _startPoint: {fileID: 0}
-  _crossbow: {fileID: 0}
+  _startPoint: {fileID: 1641556205405253896}

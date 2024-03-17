@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonMenu : MonoBehaviour
 {    
-    public UnityEvent onUiManagerResetData;
+    public UnityEvent onMainManagerResetData;
    
     public void StartButton()
     {
@@ -29,7 +29,7 @@ public class ButtonMenu : MonoBehaviour
     }
     public void RestartGame()
     {
-        onUiManagerResetData.Invoke();
+        onMainManagerResetData.Invoke();
         SceneManager.LoadScene(1);
     }
 
