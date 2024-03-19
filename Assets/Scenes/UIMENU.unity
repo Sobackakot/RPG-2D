@@ -440,9 +440,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
       propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 147733806}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 147733806}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4853328318579482799, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
       propertyPath: m_Camera
       value: 

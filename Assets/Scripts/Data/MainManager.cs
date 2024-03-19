@@ -80,7 +80,7 @@ public class MainManager : MonoBehaviour
        countMoney = 0;
        countKill = 0;
        enemyPosition.Clear(); 
-    }
+    } 
 
     [System.Serializable]
     class SaveData

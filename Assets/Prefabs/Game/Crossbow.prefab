@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  myCamera: {fileID: 0}
+  myCamera: {fileID: 5136203283227377602, guid: f9ded3d2ace65d74d87ac6b93ac22c39, type: 3}
 --- !u!114 &559035211947896420
 MonoBehaviour:
   m_ObjectHideFlags: 0

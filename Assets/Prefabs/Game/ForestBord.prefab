@@ -93,7 +93,7 @@ MonoBehaviour:
   damgeCalculate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 196902938985464809, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: TakeDamageForestHP
         m_Mode: 1
