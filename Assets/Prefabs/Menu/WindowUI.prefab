@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6834ea198032b45ac7944aab6445c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onUiManagerResetData:
+  onMainManagerResetData:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}

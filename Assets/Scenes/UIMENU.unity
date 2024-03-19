@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &147733806 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1207444487450267313, guid: fc1008d59959cbc4bb85f91d2224190f, type: 3}
-  m_PrefabInstance: {fileID: 2538969918898294256}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 822f943a6fd93ce40818dc525cdf27b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1062165678
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,42 +428,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onUiManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 147733806}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 147733806}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetData
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853328318579482799, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1062165680}
     - target: {fileID: 7426527461568883948, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
       propertyPath: m_Name
       value: WindowUI
