@@ -340,6 +340,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc1008d59959cbc4bb85f91d2224190f, type: 3}
+--- !u!114 &2538969918898294257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1207444487450267313, guid: fc1008d59959cbc4bb85f91d2224190f, type: 3}
+  m_PrefabInstance: {fileID: 2538969918898294256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822f943a6fd93ce40818dc525cdf27b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4684049272121831482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,6 +438,14 @@ PrefabInstance:
     - target: {fileID: 3789911408573198481, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2538969918898294257}
+    - target: {fileID: 4293195039126703369, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
+      propertyPath: onMainManagerResetData.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SavingDataJson
       objectReference: {fileID: 0}
     - target: {fileID: 7426527461568883948, guid: f5fe54126d77dcd40a1c946eb376edac, type: 3}
       propertyPath: m_Name

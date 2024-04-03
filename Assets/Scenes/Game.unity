@@ -191,22 +191,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &752529969 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5136203283227377602, guid: f9ded3d2ace65d74d87ac6b93ac22c39, type: 3}
-  m_PrefabInstance: {fileID: 5253040540419129269}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1640140600 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 196902938985464809, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-  m_PrefabInstance: {fileID: 8553509785311301632}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8767050dbeb26047b5800b217a4f45d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &955343885364344145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,10 +239,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 3777838747619093366, guid: b89b32520951c584fa53344c4d515f0f, type: 3}
-      propertyPath: myCamera
-      value: 
-      objectReference: {fileID: 752529969}
     - target: {fileID: 4687904961466721476, guid: b89b32520951c584fa53344c4d515f0f, type: 3}
       propertyPath: m_Name
       value: Crossbow
@@ -508,10 +488,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBord
       objectReference: {fileID: 0}
-    - target: {fileID: 5433726972943582952, guid: d910f5b785474ee478742fa31b98fa54, type: 3}
-      propertyPath: damgeCalculate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1640140600}
     - target: {fileID: 7394500856436235050, guid: d910f5b785474ee478742fa31b98fa54, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.05
@@ -565,10 +541,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3962509443045390752, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 752529969}
     - target: {fileID: 7984856961301084688, guid: 18a69b2291d30e04fb86f3baf4e49791, type: 3}
       propertyPath: m_Pivot.x
       value: 0
