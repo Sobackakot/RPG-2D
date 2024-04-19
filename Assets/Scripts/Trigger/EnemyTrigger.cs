@@ -27,11 +27,8 @@ public class EnemyTrigger : MonoBehaviour
         currentHpEnemy -= 25f;
         if (currentHpEnemy <= 0f)
         {
-            if (MainManager.Instance != null)
-            {
-                MainManager.Instance.countKill += 1;
-                MainManager.Instance.countMoney += 5;
-            } 
+            UIManager._countKill += 1;
+            UIManager._countMoney += 5;
             Destroy(gameObject);   
         }
         else
@@ -43,9 +40,7 @@ public class EnemyTrigger : MonoBehaviour
     { 
         if(other.CompareTag("Bullet"))
         {
-            UpdateHpEnemy();
-            if (currentHpEnemy <= 0f & MainManager.Instance != null)
-                MainManager.Instance.enemyPosition.Remove(transform.position);
+            UpdateHpEnemy(); 
             Destroy(other.gameObject);
         } 
     }

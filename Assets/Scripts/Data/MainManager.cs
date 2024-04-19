@@ -9,7 +9,7 @@ public class MainManager : MonoBehaviour
 
     public List<Vector3> enemyPosition = new List<Vector3>(); 
       
-    public float hp = 100f;
+    public float hp = 0f;
     public int countMoney = 0;
     public int countKill = 0;
     public int lvl = 0;
