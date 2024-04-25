@@ -21,6 +21,7 @@ public class EnemyTrigger : MonoBehaviour
     {
         if (MainManager.Instance != null)
             MainManager.Instance.enemyPosition.Add(transform.position); 
+        Destroy(gameObject);
     }
     private void UpdateHpEnemy()
     { 

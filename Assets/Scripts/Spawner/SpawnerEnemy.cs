@@ -1,4 +1,5 @@
- 
+
+using UnityEditor;
 using UnityEngine;
 
 public class SpawnerEnemy: MonoBehaviour
@@ -23,6 +24,7 @@ public class SpawnerEnemy: MonoBehaviour
             for (int i = 0; i < MainManager.Instance.enemyPosition.Count; i++)
             {
                 Instantiate(_enemyPrefab, MainManager.Instance.enemyPosition[i], transform.rotation);
+                
             }
         }      
     }
